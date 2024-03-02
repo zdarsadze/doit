@@ -75,8 +75,14 @@
                     }
                     else if (operation == "/")
                     {
-                        result = a / b;
-                        break;
+                        if (b == 0)
+                        {
+                            Console.WriteLine("Wrong input, can not devide by zero");
+                        } else
+                        {
+                            result = a / b;
+                            break;
+                        }
                     } else
                     {
                         Console.WriteLine("Wrong input");
