@@ -48,16 +48,19 @@ namespace NumberGuess
                         difficulty = 1;
                         score = 10 * difficulty;
                         numberToGuess = random.Next(1, 15);
+                        Console.WriteLine("Guess number between 1..15 in 10 tries\n");
                         break;
                     case "2":
                         difficulty = 2;
                         score = 10 * difficulty;
                         numberToGuess = random.Next(1, 25);
+                        Console.WriteLine("Guess number between 1..25 in 10 tries\n");
                         break;
                     case "3":
                         difficulty = 3;
                         score = 10 * difficulty;
                         numberToGuess = random.Next(1, 50);
+                        Console.WriteLine("Guess number between 1..50 in 10 tries\n");
                         break;
                     case "m":
                         printMyResult(results, name);
@@ -79,7 +82,6 @@ namespace NumberGuess
                 {
                     while (true)
                     {
-                        Console.Write("number = ");
                         try
                         {
                             input = int.Parse(Console.ReadLine());
@@ -98,28 +100,25 @@ namespace NumberGuess
                     } else
                     {                       
                         score -= difficulty;
-                        Console.WriteLine("Lost. You have " + numberOfGuesses + " try left");
+                        Console.WriteLine("Wrong. You have " + numberOfGuesses + " tries left");
                         if (numberOfGuesses == 0)
                         {
-                            Console.WriteLine("Gane over\n");
+                            Console.WriteLine("Gane over. Number to guess was: " + numberToGuess + "\n");
                         } else
                         {
                             if (input > numberToGuess)
                             {
-                                Console.WriteLine("Your number is greater");
+                                Console.WriteLine("Entered number is greater then number to guess\n");
                             }
                             else
                             {
-                                Console.WriteLine("Your number is lower");
+                                Console.WriteLine("Entered number is lower then number to guess\n");
                             }
                         }                                               
                     }
                 }
                 Result result = new Result(name, score);
                 addResult(results, result);
-
-
-
             }
         }
 

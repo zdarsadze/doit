@@ -187,7 +187,7 @@ namespace Hanging
             int n = Math.Min(results.Count, 10);
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine($"{i + 1}: {results[i].name} - {results[i].score}");
+                Console.WriteLine($"{i + 1}. {results[i].name} - {results[i].score}");
             }
             Console.WriteLine();
         }
@@ -210,24 +210,6 @@ namespace Hanging
                 serializer.Serialize(fileStream, results);
             }
             Console.WriteLine("Results saved");
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        }       
     }
 }
