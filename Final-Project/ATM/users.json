@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "FirsName": "Zurab",
+    "LastName": "Darsadze",
+    "PrivateNumber": "12345678910",
+    "Password": "1234",
+    "Balance": 807
+  },
+  {
+    "Id": 2,
+    "FirsName": "Z",
+    "LastName": "D",
+    "PrivateNumber": "11111111111",
+    "Password": "1111",
+    "Balance": 0
+  },
+  {
+    "Id": 3,
+    "FirsName": "x",
+    "LastName": "y",
+    "PrivateNumber": "11111111112",
+    "Password": "7143",
+    "Balance": 0
+  },
+  {
+    "Id": 4,
+    "FirsName": "",
+    "LastName": "",
+    "PrivateNumber": "12345678900",
+    "Password": "7922",
+    "Balance": 0
+  },
+  {
+    "Id": 5,
+    "FirsName": "Nino",
+    "LastName": "Jam",
+    "PrivateNumber": "00000000000",
+    "Password": "4212",
+    "Balance": 100080
+  }
+]

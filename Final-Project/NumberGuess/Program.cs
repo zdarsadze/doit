@@ -47,19 +47,19 @@ namespace NumberGuess
                     case "1":
                         difficulty = 1;
                         score = 10 * difficulty;
-                        numberToGuess = random.Next(1, 15);
+                        numberToGuess = random.Next(1, 16);
                         Console.WriteLine("Guess number between 1..15 in 10 tries\n");
                         break;
                     case "2":
                         difficulty = 2;
                         score = 10 * difficulty;
-                        numberToGuess = random.Next(1, 25);
+                        numberToGuess = random.Next(1, 26);
                         Console.WriteLine("Guess number between 1..25 in 10 tries\n");
                         break;
                     case "3":
                         difficulty = 3;
                         score = 10 * difficulty;
-                        numberToGuess = random.Next(1, 50);
+                        numberToGuess = random.Next(1, 51);
                         Console.WriteLine("Guess number between 1..50 in 10 tries\n");
                         break;
                     case "m":
